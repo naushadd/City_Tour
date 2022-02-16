@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<!-- carousel content blow -->
+<div class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="\static\2.JFIF" class="d-block w-100" height="350" width="600">
+            </div>
+            <div class="carousel-item">
+                <img src="\static\1.JPG" class="d-block w-100" height="350" width="600">
+            </div>
+            <div class="carousel-item">
+                <img src="\static\3.JPG" class="d-block w-100" height="350" width="600">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<h1 class="text-center my-4">Explore the City of Waterfalls</h1>
+
+<!-- Body content below -->
+<div class="container my-0">
+    <div class="album py-0 bg-light">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="\static\1.JPG" class="d-block w-100" height="250" width="600">
+                    <div class="card-body">
+                        <strong><p>Know more about Ranchi City</p></strong>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary">
+                                <strong><a href="/aboutranchi">View</a></button></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="\static\fall.JPG" class="d-block w-100" height="250" width="600">
+                    <div class="card-body">
+                        <strong><p>Explore the fragrance of Waterfalls</p></strong>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary">
+                                <strong><a href="/waterfalls">View</a></button></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="\static\patratu.JPG" class="d-block w-100" height="250" width="600">
+                    <div class="card-body">
+                        <strong><p>A place of paradise - Patratu Valley</p></strong>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary">
+                                <strong><a href="/valley">View</a></button></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
